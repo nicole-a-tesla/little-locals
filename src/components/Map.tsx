@@ -1,7 +1,6 @@
 import MapLibre from 'react-map-gl/maplibre';
 
 export default function Map() {
-  console.log(import.meta.env.VITE_MAP_TIER)
   return (
       <MapLibre
         initialViewState={{

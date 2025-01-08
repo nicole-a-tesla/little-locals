@@ -1,0 +1,108 @@
+[
+  {
+    "name": "The Royal Oak",
+    "latitude": 55.9480,
+    "longitude": -3.1880,
+    "allowsBabies": true,
+    "hasTimeLimit": false,
+    "allowsBabiesUntil": 0,
+    "accessible": true,
+    "changingTable": true,
+    "image": "https://example.com/images/royal-oak.jpg",
+    "hours": {
+      "monday": { "start": 1200, "end": 2300 },
+      "tuesday": { "start": 1200, "end": 2300 },
+      "wednesday": { "start": 1200, "end": 2300 },
+      "thursday": { "start": 1200, "end": 2300 },
+      "friday": { "start": 1200, "end": 0100 },
+      "saturday": { "start": 1200, "end": 0100 },
+      "sunday": { "start": 1200, "end": 2200 }
+    },
+    "url": "https://www.royaloakpub.co.uk"
+  },
+  {
+    "name": "The Baked Bean",
+    "latitude": 55.9442,
+    "longitude": -3.1905,
+    "allowsBabies": true,
+    "hasTimeLimit": true,
+    "allowsBabiesUntil": 2000,
+    "accessible": true,
+    "changingTable": false,
+    "image": "https://example.com/images/baked-bean.jpg",
+    "hours": {
+      "monday": "Closed",
+      "tuesday": { "start": 1100, "end": 2200 },
+      "wednesday": { "start": 1100, "end": 2200 },
+      "thursday": { "start": 1100, "end": 2200 },
+      "friday": { "start": 1100, "end": 0100 },
+      "saturday": { "start": 1100, "end": 0100 },
+      "sunday": { "start": 1200, "end": 2000 }
+    },
+    "url": "https://www.thebakedbeanedinburgh.com"
+  },
+  {
+    "name": "The Hoppy Frog",
+    "latitude": 55.9542,
+    "longitude": -3.1853,
+    "allowsBabies": false,
+    "hasTimeLimit": true,
+    "allowsBabiesUntil": 0,
+    "accessible": true,
+    "changingTable": false,
+    "image": "https://example.com/images/hoppy-frog.jpg",
+    "hours": {
+      "monday": { "start": 1400, "end": 2300 },
+      "tuesday": { "start": 1400, "end": 2300 },
+      "wednesday": { "start": 1400, "end": 2300 },
+      "thursday": { "start": 1400, "end": 2300 },
+      "friday": { "start": 1400, "end": 0200 },
+      "saturday": { "start": 1400, "end": 0200 },
+      "sunday": { "start": 1200, "end": 2200 }
+    },
+    "url": "https://www.hoppyfrogbar.co.uk"
+  },
+  {
+    "name": "The Thistle Tavern",
+    "latitude": 55.9506,
+    "longitude": -3.1993,
+    "allowsBabies": true,
+    "hasTimeLimit": false,
+    "allowsBabiesUntil": 0,
+    "accessible": false,
+    "changingTable": true,
+    "image": "https://example.com/images/thistle-tavern.jpg",
+    "hours": {
+      "monday": { "start": 1200, "end": 2300 },
+      "tuesday": { "start": 1200, "end": 2300 },
+      "wednesday": { "start": 1200, "end": 2300 },
+      "thursday": { "start": 1200, "end": 2300 },
+      "friday": { "start": 1200, "end": 0100 },
+      "saturday": { "start": 1200, "end": 0100 },
+      "sunday": { "start": 1200, "end": 2200 }
+    },
+    "url": "https://www.thistletavernedinburgh.com"
+  },
+  {
+    "name": "The Black Bull",
+    "latitude": 55.9420,
+    "longitude": -3.1925,
+    "allowsBabies": false,
+    "hasTimeLimit": false,
+    "allowsBabiesUntil": 0,
+    "accessible": true,
+    "changingTable": true,
+    "image": "https://example.com/images/black-bull.jpg",
+    "hours": {
+      "monday": { "start": 1200, "end": 2300 },
+      "tuesday": { "start": 1200, "end": 2300 },
+      "wednesday": { "start": 1200, "end": 2300 },
+      "thursday": { "start": 1200, "end": 2300 },
+      "friday": { "start": 1200, "end": 0200 },
+      "saturday": { "start": 1200, "end": 0200 },
+      "sunday": { "start": 1200, "end": 2300 }
+    },
+    "url": "https://www.blackbulledinburgh.com"
+  }
+]
+
