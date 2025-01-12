@@ -12,13 +12,15 @@ function App() {
     zoom: 12
 
   })
-  const [bounds, setBounds] = useState(0); // todo inital bounds val
-  const venues = useVenues();
+  const [bounds, setBounds] = useState(0);
+  const venues = useVenues({bounds});
+
+  const mapLoadCallback = (evt) => {
+    setBounds(evt.target.getBounds())
+  }
 
   const mapMoveCallback = (evt) => {
-    const bounds = evt.target.getBounds();
-    console.log('new bounds = ', bounds)
-    setBounds(bounds);
+    setBounds(evt.target.getBounds());
     setMapViewState(evt.viewState)
   }
 
@@ -28,6 +30,7 @@ function App() {
       <MapComponent
         viewState={mapViewState}
         venues={venues}
+        mapLoadCallback={mapLoadCallback}
         mapMoveCallback={mapMoveCallback}/>
       <Drawer isOpen={true} venues={venues}/>
     </>
