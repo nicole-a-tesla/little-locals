@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "flowbite": "^2.5.2",
-    "maplibre-gl": "^5.0.0",
+    "maplibre-gl": "^4.7.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-map-gl": "^7.1.8"
