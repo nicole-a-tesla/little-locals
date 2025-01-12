@@ -1,4 +1,4 @@
-interface Bar {
+interface Venue {
   name: string;
   latitude: number;
   longitude: number;
