@@ -15,11 +15,11 @@ function App() {
   const [bounds, setBounds] = useState(0); // todo inital bounds val
   const venues = useVenues();
 
-  console.log({venues})
   const mapMoveCallback = (evt) => {
     const bounds = evt.target.getBounds();
     console.log('new bounds = ', bounds)
     setBounds(bounds);
+    setMapViewState(evt.viewState)
   }
 
   return (
@@ -27,6 +27,7 @@ function App() {
       <Header />
       <MapComponent
         viewState={mapViewState}
+        venues={venues}
         mapMoveCallback={mapMoveCallback}/>
       <Drawer isOpen={true} venues={venues}/>
     </>
