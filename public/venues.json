@@ -14,8 +14,8 @@
       "tuesday": { "start": 1200, "end": 2300 },
       "wednesday": { "start": 1200, "end": 2300 },
       "thursday": { "start": 1200, "end": 2300 },
-      "friday": { "start": 1200, "end": 0100 },
-      "saturday": { "start": 1200, "end": 0100 },
+      "friday": { "start": 1200, "end": 100 },
+      "saturday": { "start": 1200, "end": 100 },
       "sunday": { "start": 1200, "end": 2200 }
     },
     "url": "https://www.royaloakpub.co.uk"
@@ -35,8 +35,8 @@
       "tuesday": { "start": 1100, "end": 2200 },
       "wednesday": { "start": 1100, "end": 2200 },
       "thursday": { "start": 1100, "end": 2200 },
-      "friday": { "start": 1100, "end": 0100 },
-      "saturday": { "start": 1100, "end": 0100 },
+      "friday": { "start": 1100, "end": 100 },
+      "saturday": { "start": 1100, "end": 100 },
       "sunday": { "start": 1200, "end": 2000 }
     },
     "url": "https://www.thebakedbeanedinburgh.com"
@@ -46,7 +46,7 @@
     "latitude": 55.9542,
     "longitude": -3.1853,
     "allowsBabies": false,
-    "hasTimeLimit": true,
+    "hasTimeLimit": false,
     "allowsBabiesUntil": 0,
     "accessible": true,
     "changingTable": false,
@@ -56,8 +56,8 @@
       "tuesday": { "start": 1400, "end": 2300 },
       "wednesday": { "start": 1400, "end": 2300 },
       "thursday": { "start": 1400, "end": 2300 },
-      "friday": { "start": 1400, "end": 0200 },
-      "saturday": { "start": 1400, "end": 0200 },
+      "friday": { "start": 1400, "end": 200 },
+      "saturday": { "start": 1400, "end": 200 },
       "sunday": { "start": 1200, "end": 2200 }
     },
     "url": "https://www.hoppyfrogbar.co.uk"
@@ -77,8 +77,8 @@
       "tuesday": { "start": 1200, "end": 2300 },
       "wednesday": { "start": 1200, "end": 2300 },
       "thursday": { "start": 1200, "end": 2300 },
-      "friday": { "start": 1200, "end": 0100 },
-      "saturday": { "start": 1200, "end": 0100 },
+      "friday": { "start": 1200, "end": 100 },
+      "saturday": { "start": 1200, "end": 100 },
       "sunday": { "start": 1200, "end": 2200 }
     },
     "url": "https://www.thistletavernedinburgh.com"
@@ -98,8 +98,8 @@
       "tuesday": { "start": 1200, "end": 2300 },
       "wednesday": { "start": 1200, "end": 2300 },
       "thursday": { "start": 1200, "end": 2300 },
-      "friday": { "start": 1200, "end": 0200 },
-      "saturday": { "start": 1200, "end": 0200 },
+      "friday": { "start": 1200, "end": 200 },
+      "saturday": { "start": 1200, "end": 200 },
       "sunday": { "start": 1200, "end": 2300 }
     },
     "url": "https://www.blackbulledinburgh.com"
