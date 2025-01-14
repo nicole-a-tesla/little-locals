@@ -40,7 +40,7 @@ function App() {
         setSelectedVenue={setSelectedVenue}
         mapLoadCallback={mapLoadCallback}
         mapMoveCallback={mapMoveCallback}/>
-      <Drawer isOpen={false} venues={venues} selectedVenue={selectedVenue}/>
+      <Drawer isOpen={selectedVenue !== null} venues={venues} selectedVenue={selectedVenue}/>
     </>
   )
 }

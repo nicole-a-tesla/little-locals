@@ -2,6 +2,7 @@ import Map, { Marker, ViewState } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { MapLoadCallback, MapMoveCallback, Venue } from '../shared/types';
 import { Dispatch, SetStateAction } from 'react';
+import { MapEvent } from 'react-map-gl';
 
 export default function MapComponent(
   {
@@ -22,12 +23,20 @@ export default function MapComponent(
   }
 ) {
 
+  const markerClick = (evt: MapEvent, venue: Venue) => {
+    setSelectedVenue(venue);
+    if (evt.originalEvent) {
+      // prevent this from triggering a map-level click event
+      evt.originalEvent.stopPropagation();
+    }
+  }
+
   const markers = venues.map(v => {
     return <Marker
       longitude={v.longitude}
       latitude={v.latitude}
       key={v.id}
-      onClick={() => setSelectedVenue(v)}
+      onClick={(evt) => markerClick(evt, v)}
       color={ selectedVenue?.id === v.id ? "red" : "blue"}/>
   })
 
@@ -37,6 +46,7 @@ export default function MapComponent(
       {...viewState}
       onMove={mapMoveCallback}
       onLoad={mapLoadCallback}
+      onClick={() => setSelectedVenue(null)}
       style={{width:"100%", height:"100%"}}
       mapStyle={`https://api.maptiler.com/maps/streets/style.json?key=${import.meta.env.VITE_MAP_TILER_KEY}`}
     >
