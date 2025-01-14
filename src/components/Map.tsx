@@ -1,8 +1,21 @@
-import * as React from 'react';
-import Map, { Marker } from 'react-map-gl/maplibre';
+import Map, { Marker, ViewState } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
+import { MapLoadCallback, MapMoveCallback, Venue } from '../shared/types';
 
-export default function MapComponent({viewState, venues, mapMoveCallback, mapLoadCallback}) {
+export default function MapComponent(
+  {
+    viewState,
+    venues,
+    mapMoveCallback,
+    mapLoadCallback
+  }:
+  {
+    viewState: ViewState,
+    venues: Venue[],
+    mapMoveCallback: MapMoveCallback,
+    mapLoadCallback: MapLoadCallback
+  }
+) {
   const markers = venues.map(v => {
     return <Marker longitude={v.longitude} latitude={v.latitude} key={v.url} color="red"/>
   })

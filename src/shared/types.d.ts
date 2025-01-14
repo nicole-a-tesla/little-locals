@@ -1,3 +1,6 @@
+import { MapEvent } from "react-map-gl";
+import { ViewStateChangeEvent } from "react-map-gl/dist/esm/types";
+
 interface Venue {
   name: string;
   latitude: number;
@@ -27,5 +30,8 @@ interface OpenWindow {
   end: number;
 }
 
-type HoursOpen = Closed || OpenWindow;
+type HoursOpen = Closed | OpenWindow;
 type Closed = "Closed";
+
+type MapLoadCallback = (e: MapLibreEvent) => void;
+type MapMoveCallback = (e: ViewStateChangeEvent) => void;
