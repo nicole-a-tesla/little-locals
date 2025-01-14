@@ -1,6 +1,7 @@
 [
   {
     "name": "The Royal Oak",
+    "id": 1,
     "latitude": 55.9480,
     "longitude": -3.1880,
     "allowsBabies": true,
@@ -22,6 +23,7 @@
   },
   {
     "name": "The Baked Bean",
+    "id": 2,
     "latitude": 55.9442,
     "longitude": -3.1905,
     "allowsBabies": true,
@@ -43,6 +45,7 @@
   },
   {
     "name": "The Hoppy Frog",
+    "id": 3,
     "latitude": 55.9542,
     "longitude": -3.1853,
     "allowsBabies": false,
@@ -64,6 +67,7 @@
   },
   {
     "name": "The Thistle Tavern",
+    "id": 4,
     "latitude": 55.9506,
     "longitude": -3.1993,
     "allowsBabies": true,
@@ -85,6 +89,7 @@
   },
   {
     "name": "The Black Bull",
+    "id": 5,
     "latitude": 55.9420,
     "longitude": -3.1925,
     "allowsBabies": false,

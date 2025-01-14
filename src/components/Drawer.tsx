@@ -1,6 +1,12 @@
-export default function Drawer({isOpen, venues}: {isOpen: boolean, venues: Venue[]}) {
+import { Venue } from '../shared/types';
+import SelectedVenue from './SelectedVenue';
+import VenueList from './VenueList';
+
+export default function Drawer({isOpen, venues, selectedVenue}: {isOpen: boolean, venues: Venue[], selectedVenue: Venue | null}) {
   const transformClass = isOpen ? "transform-none" : "translate-y-1/2" 
-  const venuesMarkdown = venues.map(v => <p className="max-w-lg mb-6 text-sm text-gray-500 dark:text-gray-400" key={v.url}>{v.name}</p>)
+
+  if (selectedVenue) {
+  }
   return (
     <>
       <div id="bottom-drawer"
@@ -8,10 +14,9 @@ export default function Drawer({isOpen, venues}: {isOpen: boolean, venues: Venue
         tabIndex={-1}
         aria-labelledby="bottom-drawer-label">
 
-        <h5 id="bottom-drawer-label" className="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400">
-          Venues
-        </h5>
-        { venuesMarkdown }
+        { selectedVenue
+          ? <SelectedVenue selectedVenue={selectedVenue} />
+          : <VenueList venues={venues}/> }
       </div>
     </>
   )

@@ -3,6 +3,7 @@ import { ViewStateChangeEvent } from "react-map-gl/dist/esm/types";
 
 interface Venue {
   name: string;
+  id: number;
   latitude: number;
   longitude: number;
   allowsBabies: boolean;
