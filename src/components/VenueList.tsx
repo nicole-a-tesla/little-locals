@@ -1,7 +1,12 @@
+import { Dispatch, SetStateAction } from "react";
 import { Venue } from "../shared/types";
+import VenueListItem from "./VenueListItem";
 
-export default function VenueList({venues}: {venues: Venue[]}) {
-    const venuesMarkdown = venues.map(v => <p className="max-w-lg mb-6 text-sm text-gray-500 dark:text-gray-400" key={v.id}>{v.name}</p>)
+export default function VenueList(
+    {venues, setSelectedVenue}:
+    {venues: Venue[], setSelectedVenue: Dispatch<SetStateAction<Venue | null>>}
+) {
+    const venuesMarkdown = venues.map(v => <VenueListItem venue={v} setSelectedVenue={setSelectedVenue}/>)
 
     return (
         <>

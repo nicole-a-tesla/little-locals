@@ -2,7 +2,9 @@ import { Venue } from '../shared/types';
 import SelectedVenue from './SelectedVenue';
 import VenueList from './VenueList';
 
-export default function Drawer({isOpen, venues, selectedVenue}: {isOpen: boolean, venues: Venue[], selectedVenue: Venue | null}) {
+export default function Drawer({isOpen, venues, selectedVenue, setSelectedVenue}:
+  {isOpen: boolean, venues: Venue[], selectedVenue: Venue | null, setSelectedVenue: Dispatch<SetStateAction<Venue | null>>}
+) {
   const transformClass = isOpen ? "transform-none" : "translate-y-1/2" 
 
   if (selectedVenue) {
@@ -16,7 +18,7 @@ export default function Drawer({isOpen, venues, selectedVenue}: {isOpen: boolean
 
         { selectedVenue
           ? <SelectedVenue selectedVenue={selectedVenue} />
-          : <VenueList venues={venues}/> }
+          : <VenueList venues={venues} setSelectedVenue={setSelectedVenue}/> }
       </div>
     </>
   )
